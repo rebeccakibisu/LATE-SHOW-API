@@ -1,8 +1,8 @@
 # server/testing/conftest.py
-
 import pytest
-from server.app import app
-from server.models import db, Episode, Guest, Appearance
+from ..app import app
+from ..models import db, Episode, Guest, Appearance
+
 
 @pytest.fixture(scope='session')
 def test_app():
